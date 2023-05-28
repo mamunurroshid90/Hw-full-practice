@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <form action="">
+      <div class="form-section">
+        <div class="address">
+          <label for="name">First Name:</label>
+          <input type="text" id="name" placeholder="First Name" />
+        </div>
+        <div class="address">
+          <label for="name">Last Name:</label>
+          <input type="text" id="name" placeholder="Last Name" />
+        </div>
+        <div class="address">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter Your email" />
+        </div>
+        <div class="address">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter Your password"
+          />
+        </div>
+      </div>
+
+      <div class="select-option">
+        <div class="first-section">
+          <div class="gender">
+            <label for="gender">
+              <h2>Select Your Gender</h2>
+              <input type="radio" name="gender" id="male" />
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" />
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="custom" />
+              <label for="custom">Custom</label>
+            </label>
+          </div>
+          <div class="division">
+            <label for="division">
+              <h2>Select Your Division</h2>
+              <select name="division" id="division">
+                <option value="">Division</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="chittagong">Chittagong</option>
+                <option value="barisal">Barisal</option>
+                <option value="rajshahi">Rajshahi</option>
+                <option value="mymensingh">Mymensingh</option>
+                <option value="rangpur">Rangpur</option>
+                <option value="sylhet">Sylhet</option>
+                <option value="khulna">Khulna</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div class="second-section">
+          <div class="multiple-check">
+            <label for="multiple check">
+              <h2>Select Your Education</h2>
+              <input type="checkbox" name="SSC" id="SSC" />
+              <label for="SSC">SSC</label>
+              <input type="checkbox" name="HSC" id="HSC" />
+              <label for="HSC">HSC</label>
+              <input type="checkbox" name="HONOURS" id="HONOURS" />
+              <label for="HONOURS">HONOURS</label>
+              <input type="checkbox" name="MUSTERS" id="MUSTERS" />
+              <label for="MUSTERS">MUSTERS</label>
+            </label>
+          </div>
+          <div class="date">
+            <h2>Select Date</h2>
+            <input type="date" />
+          </div>
+        </div>
+      </div>
+      <div class="textarea">
+        <label for="message">Message: </label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Enter Yor Message"
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

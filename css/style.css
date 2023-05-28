@@ -1,0 +1,715 @@
+/* common css starts here  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+/* common css starts here  */
+
+nav {
+  background-color: black;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  gap: 60px;
+}
+nav ul li a {
+  font-size: 30px;
+  color: #fff;
+  padding: 5px 10px;
+}
+nav ul li a:hover {
+  background-color: brown;
+  text-decoration: underline;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/* ======================= */
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li ul li {
+  background-color: blue;
+  width: 200px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+nav ul li ul li:hover {
+  background-color: brown;
+}
+
+nav ul li ul li a {
+  width: 100%;
+  font-size: 24px;
+}
+nav ul li ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.6s;
+}
+
+nav ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav ul li ul li ul {
+  top: 0%;
+  left: 100%;
+}
+/* ======================
+============================ */
+
+/* Hero section style starts here  */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px;
+  color: blue;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  min-height: 80vh;
+}
+.main {
+  display: flex;
+}
+.main aside {
+  flex: 1;
+}
+
+.main aside picture img {
+  width: 100%;
+}
+.main article {
+  flex: 1;
+}
+/* Hero section style ends here  */
+
+/* contact form style starts here  */
+form {
+  width: 1240px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: antiquewhite;
+  width: 600px;
+  padding: 15px 0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.address {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.address input {
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  width: 300px;
+  border-radius: 5px;
+  color: rgb(215, 210, 210);
+}
+
+/* ------------------------------------ */
+
+.select-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: antiquewhite;
+  width: 900px;
+  min-height: 40vh;
+  padding: 30px 0;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+.first-section {
+  display: flex;
+  justify-content: space-around;
+}
+.second-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.gender h2 {
+  padding-bottom: 20px;
+}
+
+.gender label {
+  margin-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.division h2 {
+  padding-bottom: 20px;
+}
+.division select {
+  width: 200px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.multiple-check h2 {
+  padding-bottom: 15px;
+}
+.multiple-check label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.date h2 {
+  padding-bottom: 15px;
+}
+.date input {
+  width: 150px;
+  height: 30px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.textarea {
+  display: flex;
+  gap: 10px;
+  background-color: antiquewhite;
+  width: 700px;
+  padding: 30px 30px;
+  border-radius: 8px;
+}
+.textarea label {
+  font-size: 18px;
+  font-weight: 600;
+}
+textarea {
+  width: 400px;
+  height: 150px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  resize: none;
+}
+
+form button {
+  background-color: crimson;
+  padding: 8px 24px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin: 10px 0 50px 0px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* contact form style ends here  */
+
+/* Hover Effects Button style starts here  */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 1024px;
+  margin: auto;
+}
+
+.btn1 a {
+  color: #fff;
+  background-color: aqua;
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn1 a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: blueviolet;
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn1 a:hover::before {
+  width: 100%;
+}
+/* -------------------------------- */
+
+.btn2 a {
+  color: #fff;
+  background-color: rgb(0, 157, 255);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn2 a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgb(230, 15, 198);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn2 a:hover::before {
+  height: 100%;
+}
+/* ------------------------- */
+
+.btn3 a {
+  color: #fff;
+  background-color: rgb(51, 255, 0);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn3 a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(53, 64, 164);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn3 a:hover::before {
+  width: 100%;
+}
+/* -------------------------- */
+
+.btn4 a {
+  color: #fff;
+  background-color: rgb(123, 204, 236);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn4 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(49, 43, 226);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn4 a:hover::before {
+  height: 100%;
+}
+/* ---------------------------- */
+
+.btn5 a {
+  color: #fff;
+  background-color: rgb(123, 161, 236);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn5 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(226, 43, 55);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn5 a:hover::before {
+  height: 100%;
+  width: 100%;
+}
+/* --------------------------- */
+
+.btn6 a {
+  color: #fff;
+  background-color: rgb(153, 123, 236);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn6 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgb(171, 15, 177);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn6 a:hover::before {
+  height: 100%;
+  width: 100%;
+}
+/* --------------------------- */
+
+.btn7 a {
+  color: #fff;
+  background-color: rgb(174, 123, 236);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn7 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(43, 58, 226);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn7 a:hover::before {
+  height: 100%;
+  width: 100%;
+}
+/* -------------------------- */
+
+.btn8 a {
+  color: #fff;
+  background-color: rgb(64, 35, 209);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn8 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0;
+  right: 0;
+  background-color: rgb(11, 179, 8);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn8 a:hover::before {
+  height: 100%;
+  width: 100%;
+}
+/* ---------------------------- */
+
+.btn9 a {
+  color: #fff;
+  background-color: rgb(203, 66, 213);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn9 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgb(42, 4, 77);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn9 a::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  background-color: blueviolet;
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn9 a:hover::before {
+  height: 50%;
+  width: 100%;
+}
+.btn9 a:hover::after {
+  height: 50%;
+  width: 100%;
+}
+/* ------------------------------- */
+
+.btn10 a {
+  color: #fff;
+  background-color: rgb(135, 213, 66);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn10 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0;
+  right: 0;
+  background-color: blueviolet;
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn10 a::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(226, 43, 70);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn10 a:hover::before {
+  height: 50%;
+  width: 100%;
+}
+.btn10 a:hover::after {
+  height: 50%;
+  width: 100%;
+}
+/* ----------------------- */
+
+.btn11 a {
+  color: #fff;
+  background-color: rgb(66, 206, 213);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn11 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgb(38, 3, 70);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn11 a::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(226, 43, 198);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn11 a:hover::before {
+  height: 50%;
+  width: 100%;
+}
+.btn11 a:hover::after {
+  height: 50%;
+  width: 100%;
+}
+/* ----------------------------- */
+
+.btn12 a {
+  color: #fff;
+  background-color: rgb(46, 38, 122);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn12 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  top: 0;
+  right: 0;
+  background-color: rgb(163, 10, 51);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn12 a::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(211, 43, 226);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn12 a:hover::before {
+  height: 50%;
+  width: 100%;
+}
+.btn12 a:hover::after {
+  height: 50%;
+  width: 100%;
+}
+/* ----------------------- */
+
+.btn13 a {
+  color: #fff;
+  background-color: rgb(213, 66, 115);
+  padding: 40px 60px;
+  border-radius: 8px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.btn13 a::before {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  background-color: rgb(43, 58, 226);
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn13 a::after {
+  content: "";
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: blueviolet;
+  z-index: -1;
+  transition: 0.6s;
+  border-radius: 8px;
+}
+.btn13 a:hover::before {
+  height: 50%;
+  /* width: 100%; */
+}
+.btn13 a:hover::after {
+  height: 50%;
+  /* width: 100%; */
+}
+/* Hover Effects Button style ends here  */
+
+footer {
+  background-color: black;
+  color: #fff;
+  padding-top: 20px;
+}
+
+.address {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  text-align: center;
+  padding: 20px 0;
+}

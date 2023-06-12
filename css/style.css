@@ -66,6 +66,7 @@ nav ul li ul {
   opacity: 0;
   visibility: hidden;
   transition: 0.6s;
+  z-index: 999;
 }
 
 nav ul li:hover > ul {
@@ -802,4 +803,395 @@ footer p {
   position: absolute;
   top: 10px;
   left: 10px;
+}
+
+/* =================================================== */
+
+/* flexbox style starts here  */
+.flexbox {
+  min-width: 900px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  margin-bottom: 200px;
+}
+.header {
+  background-color: rgb(70, 221, 138);
+  width: 700px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation {
+  background-color: rgb(70, 221, 138);
+  width: 700px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.aside {
+  width: 40%;
+  height: 100%;
+  margin-right: 2px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detail {
+  width: 100%;
+  height: 50%;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  width: 100%;
+  height: 50%;
+  background-color: darksalmon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer {
+  background-color: rgb(70, 221, 138);
+  width: 700px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* flexbox style ends here  */
+
+/* Hw flexbox style ends here  */
+.main-flex {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* first div starts  */
+.first-div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  gap: 5px;
+}
+.first-div .f-div1 {
+  width: 25%;
+  height: 100%;
+  background-color: aqua;
+}
+.first-div .f-div2 {
+  width: 15%;
+  height: 100%;
+  background-color: rgb(66, 132, 132);
+}
+.first-div .f-div3 {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(19, 43, 43);
+}
+.first-div .f-div4 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(236, 243, 243);
+  gap: 5px;
+}
+
+.first-child-1 {
+  width: 40%;
+  height: 30%;
+  background-color: rgb(67, 58, 237);
+}
+.first-child-2 {
+  width: 40%;
+  height: 40%;
+  background-color: rgb(40, 146, 226);
+}
+.first-child-3 {
+  width: 40%;
+  height: 30%;
+  background-color: rgb(5, 56, 94);
+}
+
+/* second div starts  */
+.second-div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  gap: 5px;
+}
+.second-div .f-div1 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(203, 135, 232);
+}
+.second-child-1 {
+  width: 40%;
+  height: 30%;
+  background-color: rgb(238, 20, 180);
+}
+.second-child-2 {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: rgb(242, 237, 241);
+}
+.second-child-2 .child-1 {
+  width: 40%;
+  height: 32%;
+  background-color: rgb(232, 131, 131);
+}
+.second-child-2 .child-2 {
+  width: 40%;
+  height: 20%;
+  background-color: rgb(176, 152, 152);
+}
+.second-child-2 .child-3 {
+  width: 40%;
+  height: 33%;
+  background-color: rgb(97, 85, 85);
+}
+.second-child-3 {
+  width: 40%;
+  height: 30%;
+  background-color: rgb(133, 227, 227);
+}
+
+.second-div .f-div2 {
+  width: 15%;
+  height: 100%;
+  background-color: rgb(236, 111, 111);
+}
+.second-div .f-div3 {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  gap: 5px;
+  background-color: rgb(251, 246, 246);
+}
+.child-div-1 {
+  width: 50%;
+  height: 100%;
+  background-color: #ecdada;
+}
+.child-div-2 {
+  width: 50%;
+  height: 100%;
+  background-color: #f2eded;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.child-div-one {
+  width: 100%;
+  height: 50%;
+  background-color: #ba8f8f;
+}
+.child-div-two {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+  background-color: #f3e0e0;
+}
+.child-div-two .child-1 {
+  width: 50%;
+  height: 33%;
+  background-color: #d94646;
+}
+.child-div-two .child-2 {
+  width: 50%;
+  height: 25%;
+  background-color: #a27373;
+}
+.child-div-two .child-3 {
+  width: 50%;
+  height: 33%;
+  background-color: #e95757;
+}
+.second-div .f-div4 {
+  width: 30%;
+  height: 100%;
+  background-color: #5498b5;
+}
+
+/* third div starts  */
+.third-div {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  gap: 5px;
+}
+
+.third-div .f-div1 {
+  width: 25%;
+  height: 100%;
+  background-color: #c4db69;
+}
+.third-div .f-div2 {
+  width: 17%;
+  height: 100%;
+  background-color: #d8e2b0;
+}
+.third-div .f-div3 {
+  width: 14%;
+  height: 100%;
+  background-color: #8eaa1d;
+}
+.third-div .f-div4 {
+  width: 14%;
+  height: 100%;
+  background-color: #f4f5f0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.child-div1 {
+  width: 100%;
+  height: 15%;
+  background-color: #d5e978;
+}
+.child-div2 {
+  width: 100%;
+  height: 25%;
+  background-color: #4f5244;
+}
+.child-div3 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  gap: 5px;
+  background-color: #ebf1d0;
+}
+.child-div3 .child1 {
+  width: 30%;
+  height: 100%;
+  background-color: #de53d5dd;
+}
+.child-div3 .child2 {
+  width: 40%;
+  height: 100%;
+  background-color: #e896e2dd;
+}
+.child-div3 .child3 {
+  width: 30%;
+  height: 100%;
+  background-color: #de53d5dd;
+}
+.child-div4 {
+  width: 100%;
+  height: 20%;
+  background-color: #676f44;
+}
+.child-div5 {
+  width: 100%;
+  height: 18%;
+  background-color: #d5deb1;
+}
+.third-div .f-div5 {
+  width: 15%;
+  height: 100%;
+  background-color: #53de61;
+}
+.third-div .f-div6 {
+  width: 15%;
+  height: 100%;
+  background-color: #ece6ecdd;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.child-div-last1 {
+  width: 100%;
+  height: 25%;
+  background-color: #b4ebba;
+}
+.child-div-last2 {
+  width: 100%;
+  height: 25%;
+  background-color: #53de61;
+}
+.child-div-last3 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  background-color: #f2f4f2;
+  gap: 5px;
+}
+.child-div-last3 .child1 {
+  width: 30%;
+  height: 100%;
+  background-color: aqua;
+}
+.child-div-last3 .child2 {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(51, 71, 71);
+}
+.child-div-last3 .child3 {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(32, 82, 82);
+}
+.child-div-last4 {
+  width: 100%;
+  height: 20%;
+  background-color: rgb(140, 227, 227);
+}
+/* Hw flexbox style ends here  */
+
+/* flex wrap example  */
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 5px;
+  margin-bottom: 100px;
+}
+.flex {
+  min-width: 200px;
+  height: 100px;
+  background-color: #5498b5;
 }

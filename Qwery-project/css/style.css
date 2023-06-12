@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+li {
+  list-style-type: none;
+}
+img {
+  display: block;
+}
+/* =============Common css here==================== */
+
+/*---------------- navbar style starts here --------- */
+nav {
+  padding-top: 28px;
+  position: absolute;
+  width: 100%;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .menu ul {
+  display: flex;
+  column-gap: 60px;
+}
+nav .container .menu ul li a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+nav .container .menu ul li a:hover {
+  color: #000;
+}
+nav .container .menu ul li .active {
+  color: #000;
+}
+/*---------------- navbar style ends here --------- */
+
+/* ===================================================== */
+
+/*---------------- banner section style starts here --------- */
+#banner__part {
+  background: url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 462px 0 462px;
+}
+#banner__part .container h6 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  color: #ffc178;
+}
+#banner__part .container h1 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 100px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+#banner__part .container h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 88px;
+  line-height: 100px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+/*---------------- banner section style ends here --------- */
+/* ======================================================== */
+
+/*---------------- holiday section style starts here --------- */
+#holiday__part {
+  background-color: #000;
+  padding: 286px 0 295px;
+}
+#holiday__part .container {
+  display: flex;
+  column-gap: 24px;
+}
+#holiday__part .container .details h6 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+  margin-top: 45px;
+}
+#holiday__part .container .details h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 496px;
+  margin: 13px 0 13px;
+}
+#holiday__part .container .details p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 587px;
+  margin-bottom: 66px;
+}
+#holiday__part .container .details a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fbd784;
+}
+/*---------------- holiday section style ends here --------- */
+/* ========================================================= */
+
+/*---------------- bromo section style starts here --------- */
+#bromo__part {
+  background: url("../images/bromo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 559px;
+}
+#bromo__part .container {
+  text-align: center;
+}
+#bromo__part .container h6 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+}
+#bromo__part .container h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 932px;
+  margin: 13px auto 14px;
+}
+#bromo__part .container p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 893px;
+  margin: 0 auto 26px;
+}
+#bromo__part .container a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #fbd784;
+  padding-bottom: 33px;
+}
+/*---------------- bromo section style ends here --------- */
+/* ======================================================= */
+
+/*---------------- culture section style starts here --------- */
+#culture__part {
+  background-color: #000;
+  padding: 295px 0 199px;
+}
+#culture__part .container {
+  display: flex;
+  flex-direction: row-reverse;
+  column-gap: 36px;
+}
+#culture__part .container h6 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+  margin-top: 153px;
+}
+#culture__part .container h2 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 87px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 663px;
+  margin: 19px 0;
+}
+#culture__part .container p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 655px;
+  margin-bottom: 47px;
+}
+#culture__part .container a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #fbd784;
+}
+/*---------------- culture section style ends here --------- */
+/* ================================== */
+
+/*---------------- footer section style starts here --------- */
+footer {
+  background-color: #000;
+  padding-bottom: 30px;
+}
+footer .container {
+  display: flex;
+}
+footer .icon-part {
+  width: 50%;
+}
+footer .service-part {
+  width: 50%;
+}
+footer .icon-part img {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 65px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+footer .icon-part h3 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  letter-spacing: -0.3px;
+  text-transform: capitalize;
+  color: #ffffff;
+  width: 405px;
+  padding: 82px 0 49px;
+}
+footer .icon-part p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.204545px;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding-bottom: 34px;
+}
+footer .icon i {
+  font-size: 30px;
+  margin: 0 7px;
+  color: #ffffff;
+}
+/* ----------------------------- */
+footer .explore {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer .services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.explore p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: -0.3px;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin-right: 18px;
+}
+.explore button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 23px;
+  text-transform: capitalize;
+  color: #000000;
+  background: #ffa343;
+  border-radius: 10px;
+  padding: 18px 67px;
+  outline: none;
+  border: none;
+}
+.services ul h4 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  letter-spacing: -0.231818px;
+  text-transform: capitalize;
+  color: #ffd1a0;
+  padding-top: 72px;
+}
+.services ul {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 26px;
+  letter-spacing: -0.204545px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+footer .copyright {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+  padding-top: 153px;
+}
+/*---------------- footer section style ends here --------- */

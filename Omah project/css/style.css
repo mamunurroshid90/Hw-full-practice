@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  max-width: 1166px;
+}
+/* =============================== */
+.navbar {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+}
+.navbar,
+.navbar-brand {
+  padding: 0;
+}
+
+.navbar .navbar-nav {
+  column-gap: 100px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #203239;
+  padding: 0;
+}
+
+.navbar .navbar-nav .nav-item .active {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #203239;
+}
+
+.navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 20px;
+  height: 3px;
+  transform: translateX(-50%);
+  transition: 0.4s;
+  background: #f6762e;
+  border-radius: 1.5px;
+  opacity: 0;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover::after {
+  opacity: 1;
+}
+.navbar .navbar-nav .nav-item .active::after {
+  opacity: 1;
+}
+/* ====================================================== */
+/* banner part style start here  */
+#banner__part {
+  background-color: #eeedde;
+  padding: 188px 0 120px;
+}
+#banner__part .container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#banner__part .image__part img {
+  width: 100%;
+}
+
+#banner__part h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 150%;
+  color: #203239;
+  width: 777px;
+}
+#banner__part p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(32, 50, 57, 0.55);
+  width: 544px;
+}
+#banner__part input {
+  width: 508px;
+  padding: 24px 56px 22px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(32, 50, 57, 0.55);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: #fff;
+  margin-right: 15px;
+}
+#banner__part button {
+  padding: 23px 37px 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(32, 50, 57, 0.55);
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: #fff;
+}
+#banner__part form {
+  position: relative;
+}
+#banner__part form i {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  font-size: 18px;
+}
+/* banner part style ends here  */
+/* ======================================================== */
+
+/* property part style starts here  */
+#property__part {
+  padding: 100px 0;
+}
+#property__part .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 64px;
+}
+
+#property__part h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 150%;
+  color: #203239;
+  width: 533px;
+}
+#property__part .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#property__part .heading h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff7527;
+}
+#property__part .main .parts {
+  width: 300px;
+  border: 1px solid #eeedde;
+  border-radius: 10px;
+  padding: 20px 35px 33px;
+  position: relative;
+}
+#property__part .main .parts::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 30px;
+  top: 17px;
+  left: 0;
+  background-color: #ff7527;
+  border-radius: 5px;
+}
+#property__part .main .parts h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #203239;
+}
+#property__part .main .parts p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 30px;
+  color: rgba(32, 50, 57, 0.55);
+}
+#property__part .main .parts a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #203239;
+}
+#property__part .main .parts .fa-arrow-right {
+  margin-left: 8px;
+}
+
+/* property part style ends here  */
